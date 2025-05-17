@@ -56,12 +56,11 @@ name: Deploy to DigitalOcean Droplet
 
 on:
   push:
-    tags:
-      - '*'   # Se ejecuta al hacer push de cualquier tag
+    branches:
+      - main  # Cambia según sea necesario
 
 jobs:
   deploy:
-    needs: build  # si tienes otro job llamado, sino quita esta línea
     runs-on: ubuntu-latest
 
     steps:
