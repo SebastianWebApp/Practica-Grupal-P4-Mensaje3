@@ -11,9 +11,7 @@ jobs:
     steps:
       # Checkout the repository code
       - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}  # Ejecuta los cambios de la rama secundaria
+        uses: actions/checkout@v3      
       # Install Docker and Docker Compose
       - name: Install Docker and Docker Compose
         run: |
@@ -56,9 +54,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Checkout repository
-       uses: actions/checkout@v4
-       with:
-          ref: ${{ github.event.pull_request.head.sha }}  # Ejecuta los cambios de la rama secundaria
+       uses: actions/checkout@v4  
      - name: Deploy the app
        uses: digitalocean/app_action/deploy@v2
        with:
