@@ -18,7 +18,7 @@ app.use(json());
 app.get("/", (req, res) => {
     res.status(200).json({
             Estado: 200,
-            Respuesta: "Servidor 3: digitalocean prueba 30",
+            Respuesta: "Servidor 3: digitalocean prueba 3",
         });
 });
 
