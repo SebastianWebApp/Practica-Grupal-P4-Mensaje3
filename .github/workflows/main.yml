@@ -3,7 +3,7 @@ name: digitalocean
 on:
   pull_request:
     branches:
-      - desarrollo  # Cambia según sea necesario
+      - main  # Cambia según sea necesario
 
 jobs:
   build-and-push:
