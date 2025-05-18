@@ -4,7 +4,7 @@ services:
   - name: web
     github:
       repo: SebastianWebApp/Practica-Grupal-P4-Mensaje3
-      branch: ${{ github.ref_name }}
+      branch: desarrollo
     run_command: npm start
     environment_slug: node-js
     instance_count: 1
