@@ -1,4 +1,4 @@
-name: pruebita-app
+name: mensaje3-app
 
 services:
   - name: web
